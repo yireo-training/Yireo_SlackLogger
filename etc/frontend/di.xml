@@ -1,28 +1,4 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Psr\Log\LoggerInterface" type="Yireo\CustomLogger\Logger"/>
-
-    <!--
-<type name="Magento\Framework\Logger\Monolog">
-    <arguments>
-        <argument name="handlers" xsi:type="array">
-            <item name="slackHandler" xsi:type="object">Yireo\CustomLogger\VirtualType\Handler\SlackHandler\ExampleChannel</item>
-        </argument>
-    </arguments>
-</type>
-
-
-<virtualType name="Yireo\CustomLogger\VirtualType\Handler\SlackHandler\ExampleChannel" type="Yireo\CustomLogger\VirtualType\Handler\SlackHandler">
-    <arguments>
-        <argument name="channel" xsi:type="string">example-channel</argument>
-    </arguments>
-</virtualType>
-
-<virtualType name="Yireo\CustomLogger\VirtualType\Handler\SlackHandler" type="Monolog\Handler\SlackHandler">
-    <arguments>
-        <argument name="token" xsi:type="string">mytoken</argument>
-        <argument name="username" xsi:type="string">myusername</argument>
-    </arguments>
-</virtualType>
--->
+    <preference for="Psr\Log\LoggerInterface" type="Yireo\SlackLogger\Logger\Logger"/>
 </config>

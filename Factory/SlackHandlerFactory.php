@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yireo\CustomLogger\Factory;
+namespace Yireo\SlackLogger\Factory;
 
 use Magento\Framework\ObjectManagerInterface;
 use Monolog\Handler\SlackHandler;
 use Monolog\Logger;
-use Yireo\CustomLogger\Config\Config;
-use Yireo\CustomLogger\Exception\NotConfigured;
+use Yireo\SlackLogger\Config\Config;
+use Yireo\SlackLogger\Exception\NotConfigured;
 
 class SlackHandlerFactory
 {

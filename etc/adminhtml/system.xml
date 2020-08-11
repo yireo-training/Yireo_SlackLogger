@@ -5,11 +5,11 @@
         <tab id="yireo" sortOrder="999" translate="label">
             <label>Yireo</label>
         </tab>
-        <section id="custom_logging" translate="label" sortOrder="342" showInDefault="1" showInWebsite="1"
+        <section id="slack_logging" translate="label" sortOrder="342" showInDefault="1" showInWebsite="1"
                  showInStore="1">
             <label>Yireo Slack Logging</label>
             <tab>yireo</tab>
-            <resource>Yireo_CustomLogger::config</resource>
+            <resource>Yireo_SlackLogger::config</resource>
             <group id="settings" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1"
                    showInStore="0">
                 <label>Settings</label>
