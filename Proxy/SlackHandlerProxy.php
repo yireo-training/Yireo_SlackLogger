@@ -44,7 +44,7 @@ class SlackHandlerProxy implements HandlerInterface
     /**
      * @return SlackHandler
      */
-    protected function _getSubject()
+    protected function getSubject(): SlackHandler
     {
         if (!$this->subject) {
             $arguments = [];
@@ -62,7 +62,7 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function isHandling(array $record)
     {
-        return $this->subject->isHandling($record);
+        return $this->getSubject()->isHandling($record);
     }
 
     /**
@@ -71,7 +71,7 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function handle(array $record)
     {
-        return $this->subject->handle($record);
+        return $this->getSubject()->handle($record);
     }
 
     /**
@@ -79,7 +79,7 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function handleBatch(array $records)
     {
-        $this->subject->handleBatch($records);
+        $this->getSubject()->handleBatch($records);
     }
 
     /**
@@ -88,7 +88,7 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function pushProcessor($callback)
     {
-        return $this->subject->pushProcessor($callback);
+        return $this->getSubject()->pushProcessor($callback);
     }
 
     /**
@@ -96,7 +96,7 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function popProcessor()
     {
-        return $this->subject->popProcessor();
+        return $this->getSubject()->popProcessor();
     }
 
     /**
@@ -105,7 +105,7 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function setFormatter(FormatterInterface $formatter)
     {
-        return $this->subject->setFormatter($formatter);
+        return $this->getSubject()->setFormatter($formatter);
     }
 
     /**
@@ -113,6 +113,6 @@ class SlackHandlerProxy implements HandlerInterface
      */
     public function getFormatter()
     {
-        return $this->subject->getFormatter();
+        return $this->getSubject()->getFormatter();
     }
 }
