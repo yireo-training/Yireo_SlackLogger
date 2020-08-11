@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Yireo\CustomLogger\Exception;
+namespace Yireo\SlackLogger\Exception;
 
 use InvalidArgumentException;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yireo\CustomLogger\Config;
+namespace Yireo\SlackLogger\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
@@ -22,6 +22,11 @@ class Config
     public function __construct(ScopeConfigInterface $scopeConfig)
     {
         $this->scopeConfig = $scopeConfig;
+    }
+
+    public function enabled(): bool
+    {
+        return (bool)$this->scopeConfig->getValue(self::XML_CONFIG_BASE_PATH . '/enabled');
     }
 
     public function getToken(): string
