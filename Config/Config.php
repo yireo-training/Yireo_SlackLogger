@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yireo\CustomLogger\Config;
+namespace Yireo\SlackLogger\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
