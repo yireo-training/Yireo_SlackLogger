@@ -42,6 +42,6 @@ class Config
             $channelName = 'general';
         }
 
-        return '#' . preg_replace('/^#/', '', $channelName);
+        return '#' . ltrim($channelName, '#');
     }
 }
