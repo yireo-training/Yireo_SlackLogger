@@ -5,12 +5,7 @@
         <tab id="yireo" sortOrder="999" translate="label">
             <label>Yireo</label>
         </tab>
-<<<<<<< HEAD
-        <section id="slack_logging" translate="label" sortOrder="342" showInDefault="1" showInWebsite="1"
-=======
-        <section id="_logging" translate="label" sortOrder="342" showInDefault="1" showInWebsite="1"
->>>>>>> 481f106ca084c520f20a0c58d2933835a3b28db4
-                 showInStore="1">
+        <section id="slack_logging" translate="label" sortOrder="342" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Yireo Slack Logging</label>
             <tab>yireo</tab>
             <resource>Yireo_SlackLogger::config</resource>

@@ -1,14 +1,11 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\Logger\Monolog">
-<<<<<<< HEAD
         <arguments>
             <argument name="handlers" xsi:type="array">
                 <item name="slackHandler" xsi:type="object">Yireo\SlackLogger\Proxy\SlackHandlerProxy</item>
             </argument>
         </arguments>
-=======
         <plugin name="Yireo\SlackLogger\Plugin\AddHandler"/>
->>>>>>> 481f106ca084c520f20a0c58d2933835a3b28db4
     </type>
 </config>
